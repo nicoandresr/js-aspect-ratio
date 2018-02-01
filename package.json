@@ -1,0 +1,32 @@
+{
+  "name": "js-aspect-ratio",
+  "version": "1.0.2",
+  "description": "a simple package for calculate the aspect ratio",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "babel src --presets babel-preset-es2015 --out-dir dist",
+    "test": "markdown-code-blocks -t javascript < README.md | node",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoandresr/js-aspect-ratio.git"
+  },
+  "keywords": [
+    "aspect",
+    "ratio",
+    "webcam"
+  ],
+  "author": "nicoandres.rodriguez@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicoandresr/js-aspect-ratio/issues"
+  },
+  "homepage": "https://github.com/nicoandresr/js-aspect-ratio#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "markdown-code-blocks": "^0.0.1",
+    "tape": "^4.8.0"
+  }
+}
