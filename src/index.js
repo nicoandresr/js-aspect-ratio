@@ -1,5 +1,3 @@
-const PHONE_SCREEN_BREAKPOINT = 576;
-
 class aspectRatio {
   constructor(ratioWidth, ratioHeight) {
     if (!ratioWidth || !ratioHeight) {
@@ -16,7 +14,7 @@ class aspectRatio {
     if (!window) {
       throw new Error('get full width only works in browser environment');
     }
-    return window.innerWidth > PHONE_SCREEN_BREAKPOINT
+    return /iphone|android/gi.test(navigator.userAgent)
       ? Math.round(window.innerHeight * this._relation)
       : Math.round(window.innerHeight / this._relation);
   }
