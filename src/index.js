@@ -15,8 +15,8 @@ class aspectRatio {
       throw new Error('get full width only works in browser environment');
     }
     return /iphone|android/gi.test(navigator.userAgent)
-      ? Math.round(window.innerHeight * this._relation)
-      : Math.round(window.innerHeight / this._relation);
+      ? Math.round(window.innerHeight / this._relation)
+      : Math.round(window.innerHeight * this._relation);
   }
 
   getFullHeight() {
